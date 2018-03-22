@@ -20,6 +20,7 @@
 		A120BA18206397AE00CCDC28 /* ApiHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A120BA16206397AE00CCDC28 /* ApiHandling.swift */; };
 		A120BA1B206397FB00CCDC28 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A120BA19206397FB00CCDC28 /* Model.xcdatamodeld */; };
 		A120BA1C206397FB00CCDC28 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A120BA19206397FB00CCDC28 /* Model.xcdatamodeld */; };
+		A18612E4206410BC004AA71E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A120B9F12063975D00CCDC28 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +231,7 @@
 				A120BA092063975D00CCDC28 /* Book_InventoryTests.swift in Sources */,
 				A120BA18206397AE00CCDC28 /* ApiHandling.swift in Sources */,
 				A120BA152063979600CCDC28 /* PersistHandling.swift in Sources */,
+				A18612E4206410BC004AA71E /* AppDelegate.swift in Sources */,
 				A120BA1C206397FB00CCDC28 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
