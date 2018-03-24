@@ -33,6 +33,14 @@ class Book_InventoryTests: XCTestCase {
         }
     }
     
+    func testAPI() {
+        let api = ApiHandling()
+        api.getPSI { (result:String?, err:Error?) in
+            print(result)
+        }
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

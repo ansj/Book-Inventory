@@ -13,6 +13,10 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let api = ApiHandling()
+        api.getPSI { (result:String?, err:Error?) in
+            print(result)
+        }
     }
 
     override func didReceiveMemoryWarning() {
