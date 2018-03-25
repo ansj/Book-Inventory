@@ -21,6 +21,7 @@
 		A120BA1B206397FB00CCDC28 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A120BA19206397FB00CCDC28 /* Model.xcdatamodeld */; };
 		A120BA1C206397FB00CCDC28 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A120BA19206397FB00CCDC28 /* Model.xcdatamodeld */; };
 		A18612E4206410BC004AA71E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A120B9F12063975D00CCDC28 /* AppDelegate.swift */; };
+		A1C713D62067C89C002C0AE0 /* BookListCont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C713D52067C89C002C0AE0 /* BookListCont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A120BA132063979600CCDC28 /* PersistHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistHandling.swift; sourceTree = "<group>"; };
 		A120BA16206397AE00CCDC28 /* ApiHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandling.swift; sourceTree = "<group>"; };
 		A120BA1A206397FB00CCDC28 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A1C713D52067C89C002C0AE0 /* BookListCont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				A120B9F12063975D00CCDC28 /* AppDelegate.swift */,
 				A120B9F32063975D00CCDC28 /* HomeController.swift */,
 				A120B9F52063975D00CCDC28 /* SecondViewController.swift */,
+				A1C713D52067C89C002C0AE0 /* BookListCont.swift */,
 				A120B9F72063975D00CCDC28 /* Main.storyboard */,
 				A120B9FA2063975D00CCDC28 /* Assets.xcassets */,
 				A120B9FC2063975D00CCDC28 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A120B9F62063975D00CCDC28 /* SecondViewController.swift in Sources */,
+				A1C713D62067C89C002C0AE0 /* BookListCont.swift in Sources */,
 				A120BA17206397AE00CCDC28 /* ApiHandling.swift in Sources */,
 				A120B9F22063975D00CCDC28 /* AppDelegate.swift in Sources */,
 				A120B9F42063975D00CCDC28 /* HomeController.swift in Sources */,

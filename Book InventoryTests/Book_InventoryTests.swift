@@ -33,14 +33,64 @@ class Book_InventoryTests: XCTestCase {
         }
     }
     
-    func testAPI() {
+    func testAPIPSI() {
         let api = ApiHandling()
-        api.getPSI { (result:String?, err:Error?) in
+        
+        // Declare our expectation
+        let readyExpectation = expectation(description: "ready")
+        
+        api.getAPI(apiURLType.PSI_URL) { (result, err) in
             print(result)
-        }
+            XCTAssertTrue((result != nil), "get data finish")
+            
+            // And fulfill the expectation...
+            readyExpectation.fulfill()
+            }
+        // Loop until the expectation is fulfilled
+        waitForExpectations(timeout: 5, handler: { error in
+            XCTAssertNil(error, "Error")
+        })
         
     }
-    
+
+    func testAPIPM25() {
+        let api = ApiHandling()
+        
+        // Declare our expectation
+        let readyExpectation = expectation(description: "ready")
+        
+        api.getAPI(apiURLType.PM_URL) { (result, err) in
+            print(result)
+            XCTAssertTrue((result != nil), "get data finish")
+            
+            // And fulfill the expectation...
+            readyExpectation.fulfill()
+        }
+        // Loop until the expectation is fulfilled
+        waitForExpectations(timeout: 5, handler: { error in
+            XCTAssertNil(error, "Error")
+        })
+    }
+
+    func testAPIWeather() {
+        let api = ApiHandling()
+        
+        // Declare our expectation
+        let readyExpectation = expectation(description: "ready")
+        
+        api.getAPI(apiURLType.WEATHER_URL) { (result, err) in
+            print(result)
+            XCTAssertTrue((result != nil), "get data finish")
+            
+            // And fulfill the expectation...
+            readyExpectation.fulfill()
+        }
+        // Loop until the expectation is fulfilled
+        waitForExpectations(timeout: 5, handler: { error in
+            XCTAssertNil(error, "Error")
+        })
+    }
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
