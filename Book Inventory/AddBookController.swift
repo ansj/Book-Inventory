@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AddBookController: UIViewController {
 
     @IBOutlet weak var txtTitle: UITextField!
     @IBOutlet weak var txtAuthor: UITextField!
@@ -17,10 +17,19 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var lblHeader: UILabel!
     @IBOutlet weak var lbAddBook: UILabel!
     
+    @IBOutlet weak var butAdd:UIButton!
+    
     var dbHandling:PersistHandling?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // make border on button
+        self.butAdd.backgroundColor = .clear
+        self.butAdd.layer.cornerRadius = 5
+        self.butAdd.layer.borderWidth = 1
+        self.butAdd.layer.borderColor = UIColor.black.cgColor
+        
         // Do any additional setup after loading the view, typically from a nib.
         modifyLabel(self.lbAddBook)
         modifyTextField(self.txtTitle)
@@ -75,7 +84,7 @@ class SecondViewController: UIViewController {
 }
 
 // MARK:- Block for validation
-extension SecondViewController {
+extension AddBookController {
     fileprivate func validateText() -> (isValid:Bool, msg:String?) {
         
         let txtTitel = self.txtTitle.text?.trimmingCharacters(in: .whitespacesAndNewlines)
