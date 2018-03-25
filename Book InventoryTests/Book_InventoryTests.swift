@@ -25,7 +25,7 @@ class Book_InventoryTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let dbHandling = PersistHandling()
-        let result = dbHandling.AddRecord("test", publisher: "test", author: "test")
+        let result = dbHandling.AddRecord("Book Title", publisher: "Book Publisher", author: "Book author", publish_date: "12-mar-2018")
         
         if result {
             let results = dbHandling.getRecords()
