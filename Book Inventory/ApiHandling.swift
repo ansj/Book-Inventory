@@ -157,6 +157,10 @@ class DataParse {
         guard let items = dataInput["items"] as? [Any] else {
             return "err"
         }
+        
+        if items.count == 0 {
+            return "no data"
+        }
         guard let immediate = items[3] as? [String:Any] else {
             return "err"
         }
